@@ -540,9 +540,9 @@
         "selected_variable": "wellness_disparity_indicator"
       }
     },
-    "JobParticipation": {
+    "LaborForceParticipationRate": {
       "effects": {
-        "selected_variable": "job_participate_rate"
+        "selected_variable": "labor_participate_rate"
       }
     },
     "EmploymentAccess": {
@@ -570,9 +570,9 @@
         "selected_variable": "food_accessibility_indicator"
       }
     },
-    "PopulationChurn": {
+    "GeographicMobility": {
       "effects": {
-        "selected_variable": "pop_churning_indicator"
+        "selected_variable": "perc_moving"
       }
     },
     "PopulationDensity": {
