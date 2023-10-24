@@ -35,13 +35,85 @@
     {
       "condition": [
         {
+          "id": "metric_set",
+          "type": "=",
+          "value": "rural_health"
+        }
+      ],
+      "effects": {
+        "display": "sec22"
+      }
+    },
+    {
+      "condition": [
+        {
+          "id": "metric_set",
+          "type": "=",
+          "value": "hoi"
+        }
+      ],
+      "effects": {
+        "display": "sec23"
+      }
+    },
+    {
+      "condition": [
+        {
+          "id": "metric_set",
+          "type": "=",
+          "value": "unit_profiles"
+        }
+      ],
+      "effects": {
+        "display": "sec24"
+      }
+    },
+    {
+      "condition": [
+        {
+          "id": "metric_set",
+          "type": "=",
+          "value": "rural_health"
+        }
+      ],
+      "effects": {
+        "display": "panel21"
+      }
+    },
+    {
+      "condition": [
+        {
+          "id": "metric_set",
+          "type": "=",
+          "value": "hoi"
+        }
+      ],
+      "effects": {
+        "display": "panel22"
+      }
+    },
+    {
+      "condition": [
+        {
+          "id": "metric_set",
+          "type": "=",
+          "value": "unit_profiles"
+        }
+      ],
+      "effects": {
+        "display": "panel23"
+      }
+    },
+    {
+      "condition": [
+        {
           "id": "selected_county",
           "type": "!",
           "value": ""
         }
       ],
       "effects": {
-        "lock": "sec31"
+        "lock": "sec81"
       }
     },
     {
@@ -60,7 +132,7 @@
         }
       ],
       "effects": {
-        "display": "sec32"
+        "display": "sec82"
       }
     }
   ],
@@ -136,6 +208,22 @@
       "default": "selected_district"
     },
     {
+      "id": "set_palette",
+      "states": [
+        {
+          "condition": [
+            {
+              "id": "settings.color_by_order",
+              "type": "",
+              "value": ""
+            }
+          ],
+          "value": "lajolla"
+        }
+      ],
+      "default": "vik"
+    },
+    {
       "id": "county_subset",
       "states": [
         {
@@ -154,7 +242,7 @@
   ],
   "dataviews": {
     "primary_view": {
-      "palette": "",
+      "palette": "set_palette",
       "y": "selected_variable",
       "x": "selected_year",
       "time_agg": "selected_year",
@@ -168,10 +256,11 @@
   },
   "info": {
     "variable_info_pane": {
+      "title": "variables.short_name",
       "dataview": "primary_view",
       "variable_info": true
     },
-    "info12": {
+    "info17": {
       "body": [
         {
           "name": "",
@@ -182,7 +271,7 @@
       "dataview": "primary_view",
       "variable_info": true
     },
-    "info13": {
+    "info18": {
       "title": "Filters",
       "body": [
         {
@@ -194,7 +283,7 @@
       "dataview": "primary_view",
       "variable_info": true
     },
-    "info14": {
+    "info19": {
       "title": "features.name",
       "default": {
         "title": "Virginia",
@@ -204,7 +293,7 @@
       "subto": ["main_map", "main_plot", "rank_table", "main_legend"],
       "variable_info": true
     },
-    "info15": {
+    "info20": {
       "body": [
         {
           "name": "Region Type",
@@ -227,7 +316,7 @@
     }
   },
   "text": {
-    "text5": {
+    "text10": {
       "text": [
         {
           "button": {
@@ -273,7 +362,7 @@
         }
       ]
     },
-    "text6": {
+    "text11": {
       "text": [
         [
           {
@@ -356,6 +445,311 @@
     }
   },
   "button": {
+    "DownloadLoadedData": {
+      "effects": "export",
+      "query": {
+        "features": {
+          "geoid": "id",
+          "name": "name",
+          "region_type": "type"
+        }
+      }
+    },
+    "ChildReadiness": {
+      "effects": {
+        "selected_variable": "median_read_pass_rate"
+      }
+    },
+    "HouseholdswithBroadband": {
+      "effects": {
+        "selected_variable": "perc_hh_with_broadband"
+      }
+    },
+    "FoodInsecurity": {
+      "effects": {
+        "selected_variable": "percent_food_insecure"
+      }
+    },
+    "ChildhoodFoodInsecurity": {
+      "effects": {
+        "selected_variable": "Child_Food_Insecurity_Rate"
+      }
+    },
+    "APNCU:Inadequate": {
+      "effects": {
+        "selected_variable": "inadequate"
+      }
+    },
+    "APNCU:Intermediate": {
+      "effects": {
+        "selected_variable": "intermediate"
+      }
+    },
+    "APNCU:Adequate": {
+      "effects": {
+        "selected_variable": "adequate"
+      }
+    },
+    "APNCU:AdequatePlus": {
+      "effects": {
+        "selected_variable": "adequateplus"
+      }
+    },
+    "AvoidableHospitalizations": {
+      "effects": {
+        "selected_variable": "prevent_hosp_rate"
+      }
+    },
+    "OverdoseEDVisits": {
+      "effects": {
+        "selected_variable": "avg_monthly_rate"
+      }
+    },
+    "EarningsperJob": {
+      "effects": {
+        "selected_variable": "earnings_per_job"
+      }
+    },
+    "EmploymentRate": {
+      "effects": {
+        "selected_variable": "emp_rate"
+      }
+    },
+    "HealthOpportunityIndex": {
+      "effects": {
+        "selected_variable": "health_opportunity_indicator"
+      }
+    },
+    "EconomicOpportunity": {
+      "effects": {
+        "selected_variable": "economic_opportunity_indicator"
+      }
+    },
+    "BuiltEnvironment": {
+      "effects": {
+        "selected_variable": "community_environment_indicator"
+      }
+    },
+    "ConsumerOpportunity": {
+      "effects": {
+        "selected_variable": "consumer_opportunity_indicator"
+      }
+    },
+    "SocialImpact": {
+      "effects": {
+        "selected_variable": "wellness_disparity_indicator"
+      }
+    },
+    "JobParticipation": {
+      "effects": {
+        "selected_variable": "job_participate_rate"
+      }
+    },
+    "EmploymentAccess": {
+      "effects": {
+        "selected_variable": "employment_access_index"
+      }
+    },
+    "IncomeInequality": {
+      "effects": {
+        "selected_variable": "gini_index"
+      }
+    },
+    "MaterialDeprivation": {
+      "effects": {
+        "selected_variable": "material_deprivation_indicator"
+      }
+    },
+    "YearsofSchooling": {
+      "effects": {
+        "selected_variable": "average_years_schooling"
+      }
+    },
+    "AccesstoFood(VDH)": {
+      "effects": {
+        "selected_variable": "food_accessibility_indicator"
+      }
+    },
+    "PopulationChurn": {
+      "effects": {
+        "selected_variable": "pop_churning_indicator"
+      }
+    },
+    "PopulationDensity": {
+      "effects": {
+        "selected_variable": "population_density_direct"
+      }
+    },
+    "Segregation": {
+      "effects": {
+        "selected_variable": "segregation_indicator"
+      }
+    },
+    "Walkability": {
+      "effects": {
+        "selected_variable": "walkability_indicator"
+      }
+    },
+    "Affordability(H&T)": {
+      "effects": {
+        "selected_variable": "affordability_index"
+      }
+    },
+    "AirQuality": {
+      "effects": {
+        "selected_variable": "air_quality_indicator"
+      }
+    },
+    "CareAccess(VDH)": {
+      "effects": {
+        "selected_variable": "access_care_indicator"
+      }
+    },
+    "IncarcerationRate(PPI)": {
+      "effects": {
+        "selected_variable": "incarceration_rate_per_100000"
+      }
+    },
+    "Populationunder20": {
+      "effects": {
+        "selected_variable": "perc_pop_under_20"
+      }
+    },
+    "Populationbetween20and64": {
+      "effects": {
+        "selected_variable": "perc_pop_20_64"
+      }
+    },
+    "Populationover65": {
+      "effects": {
+        "selected_variable": "perc_pop_65_plus"
+      }
+    },
+    "MalePopulation": {
+      "effects": {
+        "selected_variable": "perc_male"
+      }
+    },
+    "FemalePopulation": {
+      "effects": {
+        "selected_variable": "perc_female"
+      }
+    },
+    "WhitePopulation": {
+      "effects": {
+        "selected_variable": "perc_wht_alone"
+      }
+    },
+    "BlackorAfricanAmericanPopulation": {
+      "effects": {
+        "selected_variable": "perc_afr_amer_alone"
+      }
+    },
+    "AmericanIndianPopulation": {
+      "effects": {
+        "selected_variable": "perc_native_alone"
+      }
+    },
+    "Asian/PacificIslanderPopulation": {
+      "effects": {
+        "selected_variable": "perc_AAPI"
+      }
+    },
+    "OtherRacePopulation": {
+      "effects": {
+        "selected_variable": "perc_other"
+      }
+    },
+    "TwoorMoreRacesPopulation": {
+      "effects": {
+        "selected_variable": "perc_two_or_more"
+      }
+    },
+    "HispanicPopulation": {
+      "effects": {
+        "selected_variable": "perc_hispanic_or_latino"
+      }
+    },
+    "MedianHouseholdIncome": {
+      "effects": {
+        "selected_variable": "median_household_income"
+      }
+    },
+    "ChildrenRaisedbyGrandparents": {
+      "effects": {
+        "selected_variable": "perc_children_raised_by_GPs"
+      }
+    },
+    "Withoutvehicle": {
+      "effects": {
+        "selected_variable": "perc_no_vehicle"
+      }
+    },
+    "CroplandAcerage": {
+      "effects": {
+        "selected_variable": "total_cropland_acres"
+      }
+    },
+    "IrrigatedCroplandAcerage": {
+      "effects": {
+        "selected_variable": "total_irrigatedCropland_acre"
+      }
+    },
+    "NumberofCroplandOperations": {
+      "effects": {
+        "selected_variable": "total_cropland_operations"
+      }
+    },
+    "ExpensestowardsAnimalIndustry": {
+      "effects": {
+        "selected_variable": "total_animal_expense"
+      }
+    },
+    "SalesofFruitsandTreenuts": {
+      "effects": {
+        "selected_variable": "fruit_treeNut_total_sales"
+      }
+    },
+    "SalesofAnimalProducts": {
+      "effects": {
+        "selected_variable": "total_animalProducts_sales"
+      }
+    },
+    "SalesofCommodities": {
+      "effects": {
+        "selected_variable": "total_commodity_sales"
+      }
+    },
+    "SalesofCalves": {
+      "effects": {
+        "selected_variable": "total_calves_sales"
+      }
+    },
+    "Poorphysicalhealthdays": {
+      "effects": {
+        "selected_variable": "perc_poor_phys_hlth_days_14_and_over"
+      }
+    },
+    "Poormentalhealthdays": {
+      "effects": {
+        "selected_variable": "perc_poor_ment_hlth_days_14_and_over"
+      }
+    },
+    "Uninsured": {
+      "effects": {
+        "selected_variable": "no_hlth_ins_pct"
+      }
+    },
+    "Primarycarephysicians": {
+      "effects": {
+        "selected_variable": "primcare_cnt"
+      }
+    },
+    "Postsecondaryeducation": {
+      "effects": {
+        "selected_variable": "acs_postsecondary_percent"
+      }
+    },
     "Download": {
       "effects": "export",
       "dataview": "primary_view",
@@ -489,7 +883,6 @@
         "center": [38, -79.5],
         "zoom": 7,
         "height": "430px",
-        "zoomAnimation": "settings.map_zoom_animation",
         "overlays_from_measures": true,
         "subto": ["main_plot", "rank_table", "main_legend"],
         "background_shapes": "county"
