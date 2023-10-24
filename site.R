@@ -227,8 +227,8 @@ page_panel(
 
     '<p class="lead" style="font-size:1em;text-weight:bold;">Related Measures</p>',
     input_button(
-      "Job Participation",
-      list(selected_variable = "job_participate_rate")
+      "Labor Force Participation Rate",
+      list(selected_variable = "labor_participate_rate")
     ),
     input_button(
       "Employment Access",
@@ -251,8 +251,8 @@ page_panel(
       list(selected_variable = "food_accessibility_indicator")
     ),
     input_button(
-      "Population Churn",
-      list(selected_variable = "pop_churning_indicator")
+      "Geographic Mobility",
+      list(selected_variable = "perc_moving")
     ),
     input_button(
       "Population Density",
