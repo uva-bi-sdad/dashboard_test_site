@@ -21,13 +21,13 @@ data_add(
   clean = TRUE
 )
 
-# clone/pull the data repositories
-datacommons_refresh("../social_data_commons")
-
-# rebuild the view
-datacommons_view(
-  "../social_data_commons", "vdh_rural_parent", entity_info = NULL, prefer_repo = TRUE
-)
+# # clone/pull the data repositories
+# datacommons_refresh("../social_data_commons")
+# 
+# # # rebuild the view
+# datacommons_view(
+#   "../social_data_commons", "vdh_rural_parent", entity_info = NULL, prefer_repo = TRUE
+# )
 
 site_build(
   ".", serve = TRUE, aggregate = TRUE,
