@@ -26,11 +26,11 @@ datacommons_refresh("../social_data_commons")
 
 # rebuild the view
 datacommons_view(
-  "../social_data_commons", "community_example", entity_info = NULL, prefer_repo = TRUE
+  "../social_data_commons", "vdh_rural_parent", entity_info = NULL, prefer_repo = TRUE
 )
 
 site_build(
-  ".", serve = TRUE,
+  ".", serve = TRUE, aggregate = TRUE,
   endpoint = "https://vdh-data-commons.netlify.app/api"
 )
 # site_build(
