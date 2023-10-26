@@ -257,6 +257,11 @@
   },
   "uva-bi-sdad/sdc.financial_well_being": {
     "files": {
+      "Material_Deprivation/data/distribution/va_hdcttr_vdh_2017_2021_material_deprivation_index.csv.xz": {
+        "size": 94440,
+        "sha": "4df054eed35cc461abc0d58adf80f2ff0f2dab5f",
+        "md5": "f4abd43ff2953e8a244f9828f6e36627"
+      },
       "Pay and Benefits/Household Income/data/distribution/ncr_cttrbg_2015_2021_median_household_income.csv.xz": {
         "size": 290740,
         "sha": "8f1a3cb2c2eff357c536d272bafbc1d4480c9402",
@@ -316,11 +321,6 @@
         "size": 68728,
         "sha": "00c1e94b637863198032a5af0fd688f72cafc8a9",
         "md5": "d66a986a1f011c1a4753890e3ac1b095"
-      },
-      "Material_Deprivation/data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz": {
-        "size": 138484,
-        "sha": "f453f6489c7ef96f19a0f39d059eaf7d515d223b",
-        "md5": "c13b672647b43dde0fec4f3299961648"
       },
       "Pay and Benefits/Household Income/data/distribution/ncr_cttrbg_2015_2019_median_household_income.csv.xz": {
         "size": 188944,
