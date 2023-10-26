@@ -289,55 +289,55 @@ page_panel(
     # Population by Age
     input_button(
       "Population under 20",
-      list(selected_variable = "perc_pop_under_20")
+      list(selected_variable = "under_20_count")
     ),
     input_button(
       "Population between 20 and 64",
-      list(selected_variable = "perc_pop_20_64")
+      list(selected_variable = "20_64_count")
     ),
     input_button(
       "Population over 65",
-      list(selected_variable = "perc_pop_65_plus")
+      list(selected_variable = "65_plus_count")
     ),
     # Population by Sex
     input_button(
       "Male Population",
-      list(selected_variable = "perc_male")
+      list(selected_variable = "male_percent")
     ),
     input_button(
       "Female Population",
-      list(selected_variable = "perc_female")
+      list(selected_variable = "female_percent")
     ),
     # Population by Race
     input_button(
       "White Population",
-      list(selected_variable = "perc_wht_alone")
+      list(selected_variable = "wht_alone_percent")
     ),
     # N. Housing Units
     input_button(
       "Black or African American Population",
-      list(selected_variable = "perc_afr_amer_alone")
+      list(selected_variable = "afr_amer_alone_percent")
     ),
     input_button(
       "American Indian Population",
-      list(selected_variable = "perc_native_alone")
+      list(selected_variable = "native_alone_percent")
     ),
     input_button(
       "Asian/Pacific Islander Population",
-      list(selected_variable = "perc_AAPI")
+      list(selected_variable = "AAPI_percent")
     ),
     # N. Housing Units
     input_button(
       "Other Race Population",
-      list(selected_variable = "perc_other")
+      list(selected_variable = "other_percent")
     ),
     input_button(
       "Two or More Races Population",
-      list(selected_variable = "perc_two_or_more")
+      list(selected_variable = "two_or_more_percent")
     ),
     input_button(
       "Hispanic Population",
-      list(selected_variable = "perc_hispanic_or_latino")
+      list(selected_variable = "hispanic_or_latino_percent")
     ),
     # Households by Income
     input_button(
