@@ -612,62 +612,62 @@
     },
     "Populationunder20": {
       "effects": {
-        "selected_variable": "under_20_count"
+        "selected_variable": "age_under_20_percent"
       }
     },
     "Populationbetween20and64": {
       "effects": {
-        "selected_variable": "20_64_count"
+        "selected_variable": "age_20_64_percent"
       }
     },
     "Populationover65": {
       "effects": {
-        "selected_variable": "65_plus_count"
+        "selected_variable": "age_65_plus_percent"
       }
     },
     "MalePopulation": {
       "effects": {
-        "selected_variable": "male_percent"
+        "selected_variable": "age_male_percent"
       }
     },
     "FemalePopulation": {
       "effects": {
-        "selected_variable": "female_percent"
+        "selected_variable": "age_female_percent"
       }
     },
     "WhitePopulation": {
       "effects": {
-        "selected_variable": "wht_alone_percent"
+        "selected_variable": "age_wht_alone_percent"
       }
     },
     "BlackorAfricanAmericanPopulation": {
       "effects": {
-        "selected_variable": "afr_amer_alone_percent"
+        "selected_variable": "age_afr_amer_alone_percent"
       }
     },
     "AmericanIndianPopulation": {
       "effects": {
-        "selected_variable": "native_alone_percent"
+        "selected_variable": "age_native_alone_percent"
       }
     },
     "Asian/PacificIslanderPopulation": {
       "effects": {
-        "selected_variable": "AAPI_percent"
+        "selected_variable": "age_AAPI_percent"
       }
     },
     "OtherRacePopulation": {
       "effects": {
-        "selected_variable": "other_percent"
+        "selected_variable": "age_other_percent"
       }
     },
     "TwoorMoreRacesPopulation": {
       "effects": {
-        "selected_variable": "two_or_more_percent"
+        "selected_variable": "age_two_or_more_percent"
       }
     },
     "HispanicPopulation": {
       "effects": {
-        "selected_variable": "hispanic_or_latino_percent"
+        "selected_variable": "age_hispanic_or_latino_percent"
       }
     },
     "MedianHouseholdIncome": {
