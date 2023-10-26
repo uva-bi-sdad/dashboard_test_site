@@ -289,55 +289,55 @@ page_panel(
     # Population by Age
     input_button(
       "Population under 20",
-      list(selected_variable = "age_under_20_percent")
+      list(selected_variable = "age_under_20_percent_direct")
     ),
     input_button(
       "Population between 20 and 64",
-      list(selected_variable = "age_20_64_percent")
+      list(selected_variable = "age_20_64_percent_direct")
     ),
     input_button(
       "Population over 65",
-      list(selected_variable = "age_65_plus_percent")
+      list(selected_variable = "age_65_plus_percent_direct")
     ),
     # Population by Sex
     input_button(
       "Male Population",
-      list(selected_variable = "age_male_percent")
+      list(selected_variable = "gender_male_percent_direct")
     ),
     input_button(
       "Female Population",
-      list(selected_variable = "age_female_percent")
+      list(selected_variable = "gender_female_percent_direct")
     ),
     # Population by Race
     input_button(
       "White Population",
-      list(selected_variable = "age_wht_alone_percent")
+      list(selected_variable = "race_wht_alone_percent_direct")
     ),
     # N. Housing Units
     input_button(
       "Black or African American Population",
-      list(selected_variable = "age_afr_amer_alone_percent")
+      list(selected_variable = "race_afr_amer_alone_percent_direct")
     ),
     input_button(
       "American Indian Population",
-      list(selected_variable = "age_native_alone_percent")
+      list(selected_variable = "race_native_alone_percent_direct")
     ),
     input_button(
       "Asian/Pacific Islander Population",
-      list(selected_variable = "age_AAPI_percent")
+      list(selected_variable = "race_AAPI_percent_direct")
     ),
     # N. Housing Units
     input_button(
       "Other Race Population",
-      list(selected_variable = "age_other_percent")
+      list(selected_variable = "race_other_percent_direct")
     ),
     input_button(
       "Two or More Races Population",
-      list(selected_variable = "age_two_or_more_percent")
+      list(selected_variable = "race_two_or_more_percent_direct")
     ),
     input_button(
       "Hispanic Population",
-      list(selected_variable = "age_hispanic_or_latino_percent")
+      list(selected_variable = "race_hispanic_or_latino_percent_direct")
     ),
     # Households by Income
     input_button(
@@ -625,8 +625,34 @@ page_section(
         dataview = "primary_view",
         id = "variable_info_pane",
       ),
+      '
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-278827H8WK"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag("js", new Date());
+          gtag("config", "G-278827H8WK");
+        </script>
+
+        <script>
+          function download_variable(){
+            var urlParams = new URLSearchParams(window.location.search);
+            let selectedVar = urlParams.get("selected_variable");
+
+            if (selectedVar == null){
+              selectedVar = "perc_hh_with_broadband"; // The default starting variable name for this repository
+            }
+
+            window.location = "https://github.com/uva-bi-sdad/sdc.measures/raw/main/"+ selectedVar + ".csv.xz";            
+            gtag("event", "file_download", {
+              "measure": selectedVar
+            });
+          }
+        </script>
+        <button onclick="download_variable()" id= "download_variable_button" type="button" class="btn popup-button mb-2">Download All</button>
+      ',
       page_popup(
-        "Export",
+        "Download Filtered",
         page_section(
           wraps = "col",
           input_select("Table Format", c("tall", "mixed", "wide"), "mixed", id = "export_table_format"),
