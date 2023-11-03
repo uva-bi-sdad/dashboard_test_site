@@ -144,6 +144,11 @@
   },
   "uva-bi-sdad/sdc.demographics": {
     "files": {
+      "Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2020_segregation_index.csv.xz": {
+        "size": 22860,
+        "sha": "42a45c8ced49c8015b1c526a4562b134a9798266",
+        "md5": "70ff5232694ee42e9363e94343390a09"
+      },
       "Veteran/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_veteran_demographics.csv.xz": {
         "size": 1500820,
         "sha": "e7ca55be1cb3a602ef8171d2ddf60db5dbe1baaf",
@@ -158,11 +163,6 @@
         "size": 11206828,
         "sha": "019ab6b1246a0f5bc57f02494757ed3e147134a6",
         "md5": "eff78ec16bc5f77be43493e27e37b7c8"
-      },
-      "Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2020_segregation_index.csv.xz": {
-        "size": 21136,
-        "sha": "a64d5a8bad99f1f9fe452007cbb685a9dc7b93db",
-        "md5": "5185d3c3ab7ed6f5b00440ba37b05705"
       },
       "Race/data/distribution/ncr_cttrbg_acs_2009_2021_race_demographics.csv.xz": {
         "size": 10785396,
