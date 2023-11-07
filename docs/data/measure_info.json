@@ -129,19 +129,12 @@
       "volume": "Preprint",
       "doi": "10.13140/RG.2.2.12396.28807"
     },
-    "cdc11a": {
-      "id": "cdc11a",
-      "author": "Centers for Disease Control and Prevention",
-      "year": 2011,
-      "title": "Children’s Food Environment State Indicator Report",
-      "url": "https://www.cdc.gov/obesity/downloads/ChildrensFoodEnvironment.pdf"
-    },
-    "cdc11b": {
-      "id": "cdc11b",
-      "author": "Centers for Disease Control and Prevention",
-      "year": 2011,
-      "title": "Census Tract Level State Maps of the Modified Retail Food Environment Index (mRFEI)",
-      "url": "https://www.cdc.gov/obesity/downloads/census-tract-level-state-maps-mrfei_TAG508.pdf"
+    "usdafara": {
+      "id": "usdafara",
+      "author": "Economic Research Service, U.S. DEPARTMENT OF AGRICULTURE",
+      "year": 2021,
+      "title": "Food Access Research Atlas",
+      "url": "https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/"
     }
   },
   "{variant.name}_read_pass_rate": {
