@@ -1,44 +1,5 @@
 {
   "_references": {
-    "wan12": {
-      "id": "wan12",
-      "author": [
-        {
-          "given": "Neng",
-          "family": "Wan"
-        },
-        {
-          "given": "Bin",
-          "family": "Zou"
-        },
-        {
-          "given": "Troy",
-          "family": "Sternberg"
-        }
-      ],
-      "year": 2012,
-      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
-      "journal": "International Journal of Geographical Information Science",
-      "volume": "26",
-      "page": "1073–1089",
-      "doi": "10.1080/13658816.2011.624987"
-    },
-    "bii21": {
-      "id": "bii21",
-      "author": "Biocomplexity Institute and Initiative",
-      "year": 2021,
-      "title": "catchment: Calculate spatial access and availability metrics",
-      "version": "0.0.1",
-      "url": "https://github.com/uva-bi-sdad/catchment"
-    },
-    "bii-redist": {
-      "id": "bii-redist",
-      "author": "Biocomplexity Institute and Initiative",
-      "year": 2022,
-      "title": "redistribute: An R package to redistribute data",
-      "version": "0.0.1",
-      "url": "https://github.com/uva-bi-sdad/redistribute"
-    },
     "lou04": {
       "id": "lou04",
       "author": [
@@ -128,6 +89,45 @@
       "journal": "University of Chicago: Center for Spatial Data Science",
       "volume": "Preprint",
       "doi": "10.13140/RG.2.2.12396.28807"
+    },
+    "wan12": {
+      "id": "wan12",
+      "author": [
+        {
+          "given": "Neng",
+          "family": "Wan"
+        },
+        {
+          "given": "Bin",
+          "family": "Zou"
+        },
+        {
+          "given": "Troy",
+          "family": "Sternberg"
+        }
+      ],
+      "year": 2012,
+      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+      "journal": "International Journal of Geographical Information Science",
+      "volume": "26",
+      "page": "1073–1089",
+      "doi": "10.1080/13658816.2011.624987"
+    },
+    "bii21": {
+      "id": "bii21",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2021,
+      "title": "catchment: Calculate spatial access and availability metrics",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/catchment"
+    },
+    "bii-redist": {
+      "id": "bii-redist",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2022,
+      "title": "redistribute: An R package to redistribute data",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/redistribute"
     },
     "usdafara": {
       "id": "usdafara",
@@ -15918,32 +15918,32 @@
     "origin": "https://github.com/uva-bi-sdad/sdc.education/blob/main/Postsecondary/data/distribution/nces.csv.xz"
   },
   "segregation_indicator": {
-    "aggregation_method": " ",
+    "aggregation_method": "",
     "categories": "",
-    "category": "Demographics",
+    "category": "Health Opportunity Index",
     "citations": "",
     "data_type": "numeric",
     "equity_category": "",
     "layer": "",
-    "long_description": "The Segregation indicator, or the spatial dissimilarity index, measures how the racial composition of a population in a census tract compares to that of the rest of the state",
+    "long_description": "A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities. It includes measures of both community diversity and the distance between communities with different racial or ethnic profiles.",
     "long_name": "Segregation indicator",
     "measure_type": "index",
-    "short_description": "It measures how different the population composition of a subarea is from the population composition of the State as a whole",
+    "short_description": "A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities.",
     "short_name": "Segregation indicator",
     "sources": [
       {
-        "date_accessed": "2023",
-        "location": "Table DP05",
+        "date_accessed": 2023,
+        "location": "",
         "location_url": "",
-        "name": "American Community Survey",
-        "url": ""
+        "name": "Virginia Department of Health",
+        "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
       }
     ],
     "statement": "The segregation indicator in {features.name} is {value}.",
-    "type": "",
-    "unit": "individual",
+    "type": "index",
+    "unit": "",
     "variants": "",
-    "source_file": "https://github.com/uva-bi-sdad/sdc.demographics/blob/main/Segregation (HOI)/data/distribution/measure_info.json",
+    "source_file": "https://github.com/uva-bi-sdad/sdc.health/blob/main/Population Health/Health Opportunity Index/data/distribution/measure_info.json",
     "origin": "https://github.com/uva-bi-sdad/sdc.demographics/blob/main/Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2020_segregation_index.csv.xz"
   },
   "subs_3sfca": {

@@ -375,6 +375,11 @@
   },
   "uva-bi-sdad/sdc.health": {
     "files": {
+      "Population Health/Health Opportunity Index/data/distribution/va_hdcttr_vdh_2017_employment_accessibility_index.csv.xz": {
+        "size": 4304,
+        "sha": "b11aa96657818fa46a6c7d1f6b04f855d93400e1",
+        "md5": "12d47c27dc63f60d6e3042ff01c55f19"
+      },
       "Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/ncr_trct_sdad_2015_2019_brfss_sae.csv.xz": {
         "size": 94520,
         "sha": "62334bd073c56f5d199477fba2845991d91cfd33",
@@ -434,11 +439,6 @@
         "size": 4884,
         "sha": "f5112c00c8c81ff80be3a07bb7dcc70f0eff3428",
         "md5": "19d021723fec3c8529d7df5881f4af52"
-      },
-      "Population Health/Health Opportunity Index/data/distribution/va_hdcttr_vdh_2017_employment_accessibility_index.csv.xz": {
-        "size": 4824,
-        "sha": "785de0fdf8fc2fd465cde99b93840512c29e5075",
-        "md5": "4e3bc9e1d84a569c86c0e684542e77b4"
       },
       "Population Health/Health Opportunity Index/data/distribution/va_hdcttr_vdh_2017_income_inequality_index.csv.xz": {
         "size": 5136,
