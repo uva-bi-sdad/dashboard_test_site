@@ -258,9 +258,9 @@
   "uva-bi-sdad/sdc.financial_well_being": {
     "files": {
       "Material_Deprivation/data/distribution/va_hdcttr_vdh_2017_2021_material_deprivation_index.csv.xz": {
-        "size": 94920,
-        "sha": "68900090de688e501d495bddc39f3f9bcc628946",
-        "md5": "072e5d408f48807a10a6ecc4cc87ca43"
+        "size": 96036,
+        "sha": "e74d2ab7a1190bbcb3a23b604eee86364979d61a",
+        "md5": "30e9ae26065f66b978846e8d5f7bb8ec"
       },
       "Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv.xz": {
         "size": 63020,
