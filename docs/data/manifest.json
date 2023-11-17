@@ -218,20 +218,10 @@
   },
   "uva-bi-sdad/sdc.education": {
     "files": {
-      "Funding/data/distribution/va_ct_20222023_fundingAdequacy.csv.xz": {
-        "size": 1320,
-        "sha": "6612c11a7eade71d16e3f485ad50cf1959101b99",
-        "md5": "ce2eb1060fb2745bd78fbaef86b8ec3d"
-      },
-      "Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv.xz": {
-        "size": 96612,
-        "sha": "6c306422f069d061913a964a994274a0bd010abb",
-        "md5": "68ae235f027ceadb6baa62f81fb2af82"
-      },
       "Years of Schooling/data/distribution/ncr_tr_acs5_2017_2021_years_of_schooling.csv.xz": {
-        "size": 58644,
-        "sha": "bbe17f6d1f31fd98d8b5f43152c4ebacb42c509e",
-        "md5": "030de4800eb78c5af9a39288293f0f6b"
+        "size": 59996,
+        "sha": "d23d1dcbf9af671de80f7fb270ce7b14b7d2634d",
+        "md5": "93daa293820fc63c044d785104028592"
       },
       "Postsecondary/data/distribution/nces.csv.xz": {
         "size": 11384852,
@@ -252,6 +242,11 @@
         "size": 479776,
         "sha": "618a712ba55812a38fdcf707a96c897486d4874b",
         "md5": "1cc349a536182702e4eb2fcd4a55eb82"
+      },
+      "Funding/data/distribution/va_ct_2022_2023_funding_adequacy.csv.xz": {
+        "size": 1324,
+        "sha": "a2f1e494fbe9af9f48f5747900dbf7b404e59ec5",
+        "md5": "253f56814f55e74281bd5414cd5dd2b6"
       }
     }
   },
