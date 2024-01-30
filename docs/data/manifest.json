@@ -144,15 +144,15 @@
   },
   "uva-bi-sdad/sdc.demographics": {
     "files": {
-      "Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2015_2020_segregation_index.csv.xz": {
-        "size": 34772,
-        "sha": "6d61fca55ec674805ede743e96ee20b84fcc82b7",
-        "md5": "893c65ce7570ea9422aca77381b365e3"
-      },
       "Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2020_segregation_index.csv.xz": {
         "size": 22860,
         "sha": "42a45c8ced49c8015b1c526a4562b134a9798266",
         "md5": "70ff5232694ee42e9363e94343390a09"
+      },
+      "Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2015_2020_segregation_index.csv.xz": {
+        "size": 34772,
+        "sha": "6d61fca55ec674805ede743e96ee20b84fcc82b7",
+        "md5": "893c65ce7570ea9422aca77381b365e3"
       },
       "Veteran/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_veteran_demographics.csv.xz": {
         "size": 1500820,
